@@ -19,6 +19,22 @@
             int result = Square(number);
 
             Console.WriteLine("Square of " + number + " is: " + result);
+
+            ////////////////////////////////////////////////////////////
+
+            // Task 3 - Celsius to Fahrenheit Function
+            Console.Write("Enter temperature in Celsius: ");
+            double celsius = double.Parse(Console.ReadLine());
+
+            double fahrenheit = CelsiusToFahrenheit(celsius);
+
+            Console.WriteLine("Temperature in Fahrenheit = " + fahrenheit);
+
+
+
+
+
+
         }
 
         // Function of task 1:
@@ -36,6 +52,16 @@
         {
             return number * number;
         }
+
+        /// /////////////////////////////////////////////////////////
+
+
+        // Function of task 3:
+        public static double CelsiusToFahrenheit(double celsius)
+        {
+            return (celsius * 9 / 5) + 32;
+        }
+
     }
 }
 
