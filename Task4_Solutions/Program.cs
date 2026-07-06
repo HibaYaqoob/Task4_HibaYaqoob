@@ -78,7 +78,14 @@ namespace Task4_Solutions
 
             Console.WriteLine("Grade: " + grade);
 
+            //////////////////////////////////////////////////////////////
 
+            // Task 8 - Countdown Function
+
+            Console.Write("Enter starting number: ");
+            int start = int.Parse(Console.ReadLine());
+
+            Countdown(start);
 
 
 
@@ -167,7 +174,16 @@ namespace Task4_Solutions
                 return "F";
             }
         }
+        ///////////////////////////////////////////////
 
+        // Function of task 8:
+        public static void Countdown(int start)
+        {
+            for (int i = start; i >= 1; i--)
+            {
+                Console.WriteLine(i);
+            }
+        }
 
     }
 }
