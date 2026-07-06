@@ -9,12 +9,33 @@
             string name = Console.ReadLine();
 
             PrintWelcome(name);
+
+            ////////////////////////////////////////////
+
+            // Task 2 - Square Number Function
+            Console.Write("Enter a number: ");
+            int number = int.Parse(Console.ReadLine());
+
+            int result = Square(number);
+
+            Console.WriteLine("Square of " + number + " is: " + result);
         }
 
+        // Function of task 1:
         public static void PrintWelcome(string name)
         {
-            // Function of task 1:
-            Console.WriteLine($"Welcome, "+name+" we are glad to have you here.");
+            
+            Console.WriteLine($"Welcome, " + name + 
+                " we are glad to have you here.");
+        }
+        
+        /// /////////////////////////////////////////////////////////
+        
+            // Function of task 2:
+            public static int Square(int number)
+        {
+            return number * number;
         }
     }
 }
+
