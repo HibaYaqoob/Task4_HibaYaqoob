@@ -99,7 +99,42 @@ namespace Task4_Solutions
             int result3 = Multiply(2, 3, 4);
             Console.WriteLine("Multiply(int, int, int): " + result3);
 
+            //////////////////////////////////////////////////////////
 
+            // Task 10 - Overloaded Area Calculator
+
+            Console.WriteLine("Choose a shape:");
+            Console.WriteLine("1. Square");
+            Console.WriteLine("2. Rectangle");
+
+            Console.Write("Enter your choice: ");
+            int choice = int.Parse(Console.ReadLine());
+
+            if (choice == 1)
+            {
+                Console.Write("Enter the side of the square: ");
+                double side = double.Parse(Console.ReadLine());
+
+                double Area = calculateArea(side);
+
+                Console.WriteLine("Square Area = " + area);
+            }
+            else if (choice == 2)
+            {
+                Console.Write("Enter the length: ");
+                double Length = double.Parse(Console.ReadLine());
+
+                Console.Write("Enter the width: ");
+                double Width = double.Parse(Console.ReadLine());
+
+                double Area = calculateArea(length, width);
+
+                Console.WriteLine("Rectangle Area = " + area);
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice.");
+            }
 
 
         }
@@ -215,6 +250,24 @@ namespace Task4_Solutions
         {
             return num1 * num2 * num3;
         }
+
+        /////////////////////////////////////////////////////////
+
+        // Function of task 10:
+        public static double calculateArea(double side)
+        {
+            return side * side;
+        }
+
+        public static double calculateArea(double Length, double Width)
+        {
+            return Length * Width;
+        }
+
+        ///////////////////////////////////////////////////////////////////
+
+        // Function of task 11:
+
     }
 }
 
