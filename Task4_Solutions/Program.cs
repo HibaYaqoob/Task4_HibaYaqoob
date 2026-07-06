@@ -68,6 +68,20 @@ namespace Task4_Solutions
             Console.WriteLine("Area = " + area);
             Console.WriteLine("Perimeter = " + perimeter);
 
+            //////////////////////////////////////////////////////////////
+
+            // Task 7 - Grade Letter Function
+            Console.Write("Enter score: ");
+            int score = int.Parse(Console.ReadLine());
+
+            string grade = GetGradeLetter(score);
+
+            Console.WriteLine("Grade: " + grade);
+
+
+
+
+
         }
 
         // Function of task 1:
@@ -125,6 +139,33 @@ namespace Task4_Solutions
         public static double CalculatePerimeter(double length, double width)
         {
             return 2 * (length + width);
+        }
+
+        /////////////////////////////////////////////////////////////////////
+
+        // Function of task 7:
+        public static string GetGradeLetter(int score)
+        {
+            if (score >= 90)
+            {
+                return "A";
+            }
+            else if (score >= 80)
+            {
+                return "B";
+            }
+            else if (score >= 70)
+            {
+                return "C";
+            }
+            else if (score >= 60)
+            {
+                return "D";
+            }
+            else
+            {
+                return "F";
+            }
         }
 
 
