@@ -1,4 +1,6 @@
-﻿namespace Task4_Solutions
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Task4_Solutions
 {
     internal class Program
     {
@@ -30,6 +32,11 @@
 
             Console.WriteLine("Temperature in Fahrenheit = " + fahrenheit);
 
+            ////////////////////////////////////////////////////////////////////
+
+            //Task 4 - Fixed Menu Display Function
+            
+            DisplayMenu();
 
 
 
@@ -61,6 +68,19 @@
         {
             return (celsius * 9 / 5) + 32;
         }
+
+        /// /////////////////////////////////////////////////////////
+
+
+        // Function of task 4:
+        public static void DisplayMenu()
+        {
+            Console.WriteLine("===== MENU =====");
+            Console.WriteLine("1. Start");
+            Console.WriteLine("2. Help");
+            Console.WriteLine("3. Exit");
+        }
+
 
     }
 }
