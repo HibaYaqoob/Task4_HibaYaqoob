@@ -139,6 +139,13 @@ namespace Task4_Solutions
 
         }
 
+        
+        /// ////////////////////////////////////////////////////////////////////////
+        
+        // 
+
+
+
         // Function of task 1:
         public static void PrintWelcome(string name)
         {
@@ -264,9 +271,8 @@ namespace Task4_Solutions
             return Length * Width;
         }
 
-        ///////////////////////////////////////////////////////////////////
+        
 
-        // Function of task 11:
 
     }
 }
