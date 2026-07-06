@@ -87,6 +87,19 @@ namespace Task4_Solutions
 
             Countdown(start);
 
+            ////////////////////////////////////////////////////////////////
+
+            //Task 9 - Overloaded Multiply Function
+            int result1 = Multiply(5, 4);
+            Console.WriteLine("Multiply(int, int): " + result1);
+
+            double result2 = Multiply(2.5, 4.0);
+            Console.WriteLine("Multiply(double, double): " + result2);
+
+            int result3 = Multiply(2, 3, 4);
+            Console.WriteLine("Multiply(int, int, int): " + result3);
+
+
 
 
         }
@@ -185,6 +198,23 @@ namespace Task4_Solutions
             }
         }
 
+        ///////////////////////////////////////////////////
+
+        // function of task 9:
+        public static int Multiply(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        public static double Multiply(double num1, double num2)
+        {
+            return num1 * num2;
+        }
+
+        public static int Multiply(int num1, int num2, int num3)
+        {
+            return num1 * num2 * num3;
+        }
     }
 }
 
